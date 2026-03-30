@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,19 +17,21 @@
   </header>
 
   <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="contact.html">Enquiries</a>
-    <span id="nav-auth-area"></span>
+    <div class="nav-inner">
+      <div class="nav-links nav-left">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Enquiries</a>
+      </div>
+      <div class="nav-links nav-right" id="nav-auth-area"></div>
+    </div>
   </nav>
 
-  <main class="page-wrap">
-    <section class="card">
-      <h1>Vendor Dashboard</h1>
-      <p id="vendor-welcome">Checking login...</p>
-    </section>
-  </main>
-
-  <script type="module" src="nav.js"></script>
-  <script type="module" src="dashboard.js"></script>
-</body>
+  <section class="search-wrap">
+    <form class="search-bar" action="#" method="get">
+      <input type="text" placeholder="Search vendors, categories, or locations">
+      <button type="submit">Search</button>
+    </form>
+  </section>
 </html>
