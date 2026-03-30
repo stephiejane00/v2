@@ -34,4 +34,13 @@ function renderLoggedInNav(user) {
         alert("Logout failed. Please try again.");
       }
     });
+  }
+}
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    renderLoggedInNav(user);
+  } else {
+    renderLoggedOutNav();
+  }
 });
