@@ -11,6 +11,7 @@ function renderLoggedOutNav() {
 
   navAuthArea.innerHTML = `
     <a href="login.html">Vendor Login</a>
+    <a href="signup.html">Sign Up</a>
   `;
 }
 
